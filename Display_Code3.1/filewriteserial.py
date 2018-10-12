@@ -2,14 +2,14 @@ import serial
 import os
 import tkMessageBox
 
-os.system("sudo chmod a+rw /dev/ttyACM0")
+os.system("sudo chmod a+rw /dev/ttyUSB0")
 os.system("touch testfile.txt")
 file=open("testfile.txt","w")
 file.close()
 
 while True:
 
-        ser = serial.Serial('/dev/ttyACM0')
+        ser = serial.Serial('/dev/ttyUSB0')
         ser_bytes = ser.readline()
         print(ser_bytes)
 

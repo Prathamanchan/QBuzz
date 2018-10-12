@@ -4,9 +4,9 @@ but still i am writing
 so here thus it becomes a junk file
 soo let's be serious
 
-ReED 230 MS
-GREEN 280 MS
-ORANGE 390 MS
-YELLOW 800 MS
+RED 230.00 ms
+GREEN 280.00 ms
+ORANGE 390 ms
+YELLOW 800 ms
 I hope my code works, tho i never trust my code
 

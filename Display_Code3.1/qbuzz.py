@@ -6,7 +6,7 @@ import tkFont
 import serial
 import os
 
-os.system("sudo chmod a+rw /dev/ttyACM0")
+os.system("sudo chmod a+rw /dev/ttyUSB0")
 os.system("python filewriteserial.py &")
 root=Tk()
 root.title("Quiz Buzzer")
@@ -32,7 +32,7 @@ def readFile():
 		Vat.append(1)
 		count=count+1
 
-		Garbage[count] =map(int, [int(i) for i in e.split() if i.isdigit()])
+		Garbage[count] =map(float, [float(i) for i in e.split() if i.replace('.','',1).isdigit()])
 		if len(Garbage[count]) != 0:  #Filter Empty Lines
                 	Int[count]=Garbage[count].pop()
 		print Int
