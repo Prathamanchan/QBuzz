@@ -69,7 +69,7 @@ String tnames[7]={"ND","ND","RED","BLUE","GREEN","ORANGE","YELLOW"};   //Team Na
 void setup() {
 
   Serial.begin(9600);
-  //Serial.println("All Fine");
+  Serial.println("All Fine");
 
  pinMode( RedLed,OUTPUT);
  pinMode( BlueLed,OUTPUT);
@@ -120,7 +120,7 @@ void startGame()
   //Give a turn on Alert
   //Condition Variable
   
- // Serial.println(" Function startGame() ");
+ Serial.println(" Function startGame() ");
 
 
 do{
@@ -147,7 +147,7 @@ if( digitalRead(Start)==HIGH)
     digitalWrite(RedLed,HIGH);
     team[ai]=2;
     duration[ai]=getTime(past);
-    //Serial.println(String(tnames[team[ai]])+"  "+String(duration[ai]));
+    Serial.println(String(tnames[team[ai]])+"  "+String(duration[ai]));
     ai++; //Increment
     ri=1;
     
@@ -158,7 +158,7 @@ if( digitalRead(Start)==HIGH)
     digitalWrite(BlueLed,HIGH);
     team[ai]=3;
     duration[ai]=getTime(past);
-    //Serial.println(String(tnames[team[ai]])+"  "+String(duration[ai]));
+    Serial.println(String(tnames[team[ai]])+"  "+String(duration[ai]));
     ai++; //Increment
     bi=1;
   }
@@ -168,7 +168,7 @@ if( digitalRead(Start)==HIGH)
     digitalWrite(GreenLed,HIGH);
     team[ai]=4;
     duration[ai]=getTime(past);
-    //Serial.println(String(tnames[team[ai]])+"  "+String(duration[ai]));
+    Serial.println(String(tnames[team[ai]])+"  "+String(duration[ai]));
     ai++;  //Increment
     gi=1;
   }
@@ -179,7 +179,7 @@ if( digitalRead(Start)==HIGH)
     digitalWrite(OrangeLed,HIGH);
     team[ai]=5;
     duration[ai]=getTime(past);
-    //Serial.println(String(tnames[team[ai]])+"  "+String(duration[ai]));
+    Serial.println(String(tnames[team[ai]])+"  "+String(duration[ai]));
     ai++;  //Increment
     oi=1;
 
@@ -191,7 +191,7 @@ if( digitalRead(Start)==HIGH)
     digitalWrite(YellowLed,HIGH);
     team[ai]=6;
     duration[ai]=getTime(past);
-    //Serial.println(String(tnames[team[ai]])+"  "+String(duration[ai]));
+    Serial.println(String(tnames[team[ai]])+"  "+String(duration[ai]));
     ai++;  //Increment
     yi=1;
 
@@ -212,7 +212,7 @@ if( digitalRead(Start)==HIGH)
 
 void checkAnswer()
 {
-  //Serial.println(" Function checkAnswer()");
+  Serial.println(" Function checkAnswer()");
   ai=0;
   digitalWrite(RedLed,LOW); //Turn Off All Lights
   digitalWrite(BlueLed,LOW);
