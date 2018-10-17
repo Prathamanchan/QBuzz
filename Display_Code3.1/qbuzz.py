@@ -68,10 +68,10 @@ def readFile():
 
 	str1="RED    "+str(red)+"ms \n"+"YELLOW  "+str(yellow)+"ms \n"+"GREEN  "+str(green)+"ms \n"+"ORANGE "+str(orange)+"ms \n"
 	label_01.config(text=str(red)+" ms")
-	label_11.config(text=str(green)+" ms")
-	label_21.config(text=str(orange)+" ms")
-	label_31.config(text=str(yellow)+" ms")
-	label_41.config(text=str(blue)+" ms")	
+	label_11.config(text=str(blue)+" ms")
+	label_21.config(text=str(green)+" ms")
+	label_31.config(text=str(orange)+" ms")
+	label_41.config(text=str(yellow)+" ms")	
 
 
 	f.close()
@@ -100,13 +100,13 @@ bottomframe.pack(side=BOTTOM,fill=BOTH,expand=1)
 
 label_00=Label(midframe,width="20",height="3",bg="red",text="RED",fg="white",font="-weight bold")
 label_01=Label(midframe,width="20",height="3",bg="white",text=" ",fg="black",font="-weight bold")
-label_10=Label(midframe,width="20",height="3",bg="green",text="GREEN",fg="white",font="-weight bold")
+label_10=Label(midframe,width="20",height="3",bg="blue",text="BLUE",fg="white",font="-weight bold")
 label_11=Label(midframe,width="20",height="3",bg="white",text=" ",fg="black",font="-weight bold")
-label_20=Label(midframe,width="20",height="3",bg="orange",text="ORANGE",fg="white",font="-weight bold")
+label_20=Label(midframe,width="20",height="3",bg="green",text="GREEN",fg="white",font="-weight bold")
 label_21=Label(midframe,width="20",height="3",bg="white",text=" ",fg="black",font="-weight bold")
-label_30=Label(midframe,width="20",height="3",bg="yellow",text="YELLOW",fg="white",font="-weight bold")
+label_30=Label(midframe,width="20",height="3",bg="orange",text="ORANGE",fg="white",font="-weight bold")
 label_31=Label(midframe,width="20",height="3",bg="white",text=" ",fg="black",font="-weight bold")
-label_40=Label(midframe,width="20",height="3",bg="blue",text="BLUE",fg="white",font="-weight bold")
+label_40=Label(midframe,width="20",height="3",bg="yellow",text="YELLOW",fg="white",font="-weight bold")
 label_41=Label(midframe,width="20",height="3",bg="white",text=" ",fg="black",font="-weight bold")
 
 

@@ -6,6 +6,7 @@ os.system("sudo chmod a+rw /dev/ttyUSB0")
 os.system("touch testfile.txt")
 file=open("testfile.txt","w")
 file.close()
+print("All FIne")
 
 while True:
 
