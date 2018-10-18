@@ -200,7 +200,7 @@ if( digitalRead(Start)==HIGH)
   if(digitalRead(Stop)==HIGH)
   {
     StopVar=1;
-    //Serial.println(" Game Stopped");
+    Serial.println(" Game Stopped");
     break;   
   }
   }
